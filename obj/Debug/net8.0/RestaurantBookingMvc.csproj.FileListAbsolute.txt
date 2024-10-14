@@ -28,3 +28,9 @@
 /Users/damianamalraj/Documents/Development/RestaurantBookingMvc/obj/Debug/net8.0/RestaurantBookingMvc.pdb
 /Users/damianamalraj/Documents/Development/RestaurantBookingMvc/obj/Debug/net8.0/RestaurantBookingMvc.genruntimeconfig.cache
 /Users/damianamalraj/Documents/Development/RestaurantBookingMvc/obj/Debug/net8.0/ref/RestaurantBookingMvc.dll
+/Users/damianamalraj/Documents/Development/RestaurantBookingMvc/obj/Debug/net8.0/RestaurantBookingMvc.sourcelink.json
+/Users/damianamalraj/Documents/Development/RestaurantBookingMvc/bin/Debug/net8.0/System.Net.Http.Formatting.dll
+/Users/damianamalraj/Documents/Development/RestaurantBookingMvc/bin/Debug/net8.0/Newtonsoft.Json.dll
+/Users/damianamalraj/Documents/Development/RestaurantBookingMvc/bin/Debug/net8.0/Newtonsoft.Json.Bson.dll
+/Users/damianamalraj/Documents/Development/RestaurantBookingMvc/obj/Debug/net8.0/RestaurantBookingMvc.csproj.AssemblyReference.cache
+/Users/damianamalraj/Documents/Development/RestaurantBookingMvc/obj/Debug/net8.0/Restaura.3FDC3D3B.Up2Date

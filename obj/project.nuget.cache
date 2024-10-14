@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "0v2r0NQq2OJ7Ks4GRje4RL3Sv1IwqDX0FGns6/NkROVsgePxA7D0Jkiw2zoblHYfhfsvW6h84Z9RzwEiZbYpcg==",
+  "dgSpecHash": "EPdt0DX6LufQHiep15TBsvp2MNwiuniyWTnKFYGSYCldCSxE2Tl7SKqZ7uKSC2jVR8Y0+RNOmn1oGEhd/SctfQ==",
   "success": true,
   "projectFilePath": "/Users/damianamalraj/Documents/Development/RestaurantBookingMvc/RestaurantBookingMvc.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/damianamalraj/.nuget/packages/microsoft.aspnet.webapi.client/6.0.0/microsoft.aspnet.webapi.client.6.0.0.nupkg.sha512",
+    "/Users/damianamalraj/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512",
+    "/Users/damianamalraj/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "/Users/damianamalraj/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
+    "/Users/damianamalraj/.nuget/packages/system.threading.tasks.extensions/4.5.4/system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
   "logs": []
 }

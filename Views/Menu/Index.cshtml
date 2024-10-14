@@ -1,0 +1,19 @@
+@model List<MenuItem>
+
+<div class="container">
+    <h1 class="mb-4">Menu</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <img src="~/img/food.jpg" class="card-img-top" alt="food">
+                        <h5 class="card-title">@item.Name</h5>
+                        <p class="card-text">$@item.Price.ToString("F2")</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

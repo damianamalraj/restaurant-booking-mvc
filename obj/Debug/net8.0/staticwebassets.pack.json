@@ -13,6 +13,14 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/Users/damianamalraj/Documents/Development/RestaurantBookingMvc/wwwroot/img/food.jpg",
+      "PackagePath": "staticwebassets/img/food.jpg"
+    },
+    {
+      "Id": "/Users/damianamalraj/Documents/Development/RestaurantBookingMvc/wwwroot/img/restaurant.jpg",
+      "PackagePath": "staticwebassets/img/restaurant.jpg"
+    },
+    {
       "Id": "/Users/damianamalraj/Documents/Development/RestaurantBookingMvc/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },
