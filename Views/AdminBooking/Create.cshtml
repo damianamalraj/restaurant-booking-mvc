@@ -1,0 +1,72 @@
+@model Booking
+
+@{
+  ViewData["Title"] = "Create";
+}
+
+<h1 class="mb-4">Create Booking</h1>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="TableNumber"></label>
+        <input asp-for="TableNumber" class="form-control" />
+        <span asp-validation-for="TableNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CustomerName"></label>
+        <input asp-for="CustomerName" class="form-control" />
+        <span asp-validation-for="CustomerName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CustomerEmail"></label>
+        <input asp-for="CustomerEmail" class="form-control" />
+        <span asp-validation-for="CustomerEmail" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="NumberOfPeople"></label>
+        <input asp-for="NumberOfPeople" class="form-control" />
+        <span asp-validation-for="NumberOfPeople" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="StartBookingDateTime"></label>
+        <input asp-for="StartBookingDateTime" class="form-control" />
+        <span asp-validation-for="StartBookingDateTime" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<h1 class="mt-4">Avalable Table's</h1>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-4">
+  @if (ViewBag.Tables != null)
+  {
+      @foreach (var table in @ViewBag.Tables)
+      {
+          <div class="col">
+              <div class="card h-100">
+                  <div class="card-body">
+                      <h5 class="card-title">Table number: @table.TableNumber</h5>
+                      <p class="card-text">Seats: @table.Seats</p>
+                  </div>
+              </div>
+          </div>
+      }
+  }
+</div>
+
+<div class="mt-4">
+    <a asp-action="Index">Back to List</a>
+</div>
+

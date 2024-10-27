@@ -1,0 +1,36 @@
+@model MenuItem
+
+@{
+  ViewData["Title"] = "Create";
+}
+
+<h1 class="mb-4">Create Menu</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="IsAvailable"></label>
+        <input type="radio" asp-for="IsAvailable" value="true" /> Yes
+        <input type="radio" asp-for="IsAvailable" value="false" /> No
+    </div>
+    <div class="form-group">
+        <label asp-for="IsPopular"></label>
+        <input type="radio" asp-for="IsPopular" value="true" /> Yes
+        <input type="radio" asp-for="IsPopular" value="false" /> No
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
+
+<div class="mt-4">
+    <a asp-action="Index">Back to List</a>
+</div>
