@@ -6,15 +6,18 @@ using RestaurantBookingMvc.Models;
 
 namespace RestaurantBookingMvc.Controllers
 {
-  [Authorize(Roles = "Admin")]
+  [Authorize]
   public class AdminMenuController : Controller
   {
     private readonly HttpClient _client;
-    private readonly string baseUri = "http://localhost:5211";
+    private readonly IConfiguration _configuration;
+    private readonly string? baseUri;
 
-    public AdminMenuController(HttpClient client)
+    public AdminMenuController(HttpClient client, IConfiguration configuration)
     {
       _client = client;
+      _configuration = configuration;
+      baseUri = _configuration["BaseUri"];
     }
 
     public async Task<IActionResult> Index()

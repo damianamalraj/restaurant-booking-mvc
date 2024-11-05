@@ -9,12 +9,15 @@ public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
     private readonly HttpClient _client;
-    private readonly string baseUri = "http://localhost:5211";
+    private readonly IConfiguration _configuration;
+    private readonly string? baseUri;
 
-    public HomeController(ILogger<HomeController> logger, HttpClient client)
+    public HomeController(ILogger<HomeController> logger, HttpClient client, IConfiguration configuration)
     {
         _logger = logger;
         _client = client;
+        _configuration = configuration;
+        baseUri = _configuration["BaseUri"];
     }
 
     public async Task<IActionResult> Index()
