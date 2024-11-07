@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RestaurantBookingMvc")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1f3ab3642d24d613723ac91a83943f7fc26a1886")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97603ae708e9b808eccb98738e8d5b483b439dd1")]
 [assembly: System.Reflection.AssemblyProductAttribute("RestaurantBookingMvc")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RestaurantBookingMvc")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

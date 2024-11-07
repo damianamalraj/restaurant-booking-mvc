@@ -13,7 +13,9 @@ namespace RestaurantBookingMvc.Controllers
     private readonly IConfiguration _configuration;
     private readonly string? baseUri;
 
-    public AdminMenuController(HttpClient client, IConfiguration configuration)
+    
+    
+    public    AdminMenuController(HttpClient client, IConfiguration configuration)
     {
       _client = client;
       _configuration = configuration;
